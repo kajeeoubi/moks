@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_beranda">
+
+    <fragment
+        android:id="@+id/navigation_beranda"
+        android:name="com.example.uts_mobile_02995.ui.beranda.BerandaFragment"
+        android:label="@string/title_beranda"
+        tools:layout="@layout/fragment_beranda">
+
+        <action
+            android:id="@+id/action_beranda_to_produk"
+            app:destination="@id/navigation_produk" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_produk"
+        android:name="com.example.uts_mobile_02995.ui.produk.ProdukFragment"
+        android:label="@string/title_produk"
+        tools:layout="@layout/fragment_produk" />
+
+    <fragment
+        android:id="@+id/navigation_keranjang"
+        android:name="com.example.uts_mobile_02995.ui.keranjang.KeranjangFragment"
+        android:label="@string/title_keranjang"
+        tools:layout="@layout/fragment_keranjang" >
+
+        <action
+            android:id="@+id/action_order_to_checkout"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.uts_mobile_02995.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profile_to_editProfile"
+            app:destination="@id/editProfileFragment" />
+
+        <action
+            android:id="@+id/action_profile_to_editSandi"
+            app:destination="@id/editSandiFragment" />
+
+        <action
+            android:id="@+id/action_profile_to_kontak"
+            app:destination="@id/navigation_kontak" />
+
+        <action
+            android:id="@+id/action_profile_to_riwayatPesanan"
+            app:destination="@id/navigation_riwayat_pesanan" />
+
+        <action
+            android:id="@+id/action_profile_to_alamatPengiriman"
+            app:destination="@id/alamatPengirimanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_kontak"
+        android:name="com.example.uts_mobile_02995.ui.kontak.KontakFragment"
+        android:label="@string/title_kontak"
+        tools:layout="@layout/fragment_kontak" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.uts_mobile_02995.ui.profile.EditProfileFragment"
+        android:label="@string/title_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.uts_mobile_02995.ui.checkout.CheckoutFragment"
+        android:label="@string/title_checkout"
+        tools:layout="@layout/fragment_checkout" >
+
+        <action
+            android:id="@+id/action_checkoutFragment_to_alamatPengirimanFragment"
+            app:destination="@id/alamatPengirimanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editSandiFragment"
+        android:name="com.example.uts_mobile_02995.ui.profile.EditSandiFragment"
+        android:label="@string/title_edit_sandi"
+        tools:layout="@layout/fragment_edit_sandi" />
+
+    <fragment
+        android:id="@+id/navigation_riwayat_pesanan"
+        android:name="com.example.uts_mobile_02995.ui.pesanan.PesananFragment"
+        android:label="@string/title_riwayat_pesanan"
+        tools:layout="@layout/fragment_riwayat_pesanan">
+    
+        <action
+            android:id="@+id/action_riwayat_to_detailPesanan"
+            app:destination="@id/navigation_detail_pesanan" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detail_pesanan"
+        android:name="com.example.uts_mobile_02995.ui.pesanan.DetailPesananFragment"
+        android:label="Detail Pesanan"
+        tools:layout="@layout/fragment_detail_pesanan" />
+
+    <fragment
+        android:id="@+id/alamatPengirimanFragment"
+        android:name="com.example.uts_mobile_02995.ui.alamat.AlamatPengirimanFragment"
+        android:label="Alamat Pengiriman"
+        tools:layout="@layout/fragment_alamat_pengiriman" />
+</navigation>

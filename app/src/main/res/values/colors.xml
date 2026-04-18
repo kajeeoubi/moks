@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UI Colors (Minimalis) -->
+    <color name="background_primary">#FFFFFFFF</color>
+    <color name="background_secondary">#FFF8F9FA</color>
+    <color name="text_primary">#FF212529</color>
+    <color name="text_secondary">#FF6C757D</color>
+    <color name="border_light">#FFE9ECEF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Aksen & Interaktif -->
+    <color name="primary_button">#FF4361EE</color>
+    <color name="secondary_button">#FFF8F9FA</color>
+    <color name="button_border">#FFDEE2E6</color>
+    <color name="error">#FFEF233C</color>
+    <color name="success">#FF4BB543</color>
+
+    <!-- Ikon Colorful -->
+    <color name="icon_red">#FF4141</color>
+    <color name="icon_teal">#FF4ECDC4</color>
+    <color name="icon_yellow">#FFFFD166</color>
+    <color name="icon_purple">#FFA05195</color>
+    <color name="icon_blue_teal">#FF2EC4B6</color>
+
+    <!-- Card & Shadow -->
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="shadow_color">#1A000000</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_etd" type="id"/>
+    <item name="tag_courier" type="id"/>
+    <item name="tag_service" type="id"/>
+</resources>

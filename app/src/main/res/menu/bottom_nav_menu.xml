@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_beranda"
+        android:icon="@drawable/beranda"
+        android:title="@string/title_beranda" />
+
+    <item
+        android:id="@+id/navigation_produk"
+        android:icon="@drawable/produk"
+        android:title="@string/title_produk" />
+
+    <item
+        android:id="@+id/navigation_keranjang"
+        android:icon="@drawable/keranjang"
+        android:title="@string/title_keranjang" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="@string/title_profile" />
+
+</menu>

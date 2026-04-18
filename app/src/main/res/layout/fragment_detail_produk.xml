@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <!-- Gambar Produk -->
+    <ImageView
+        android:id="@+id/imgProdukDetail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="Gambar Produk" />
+
+    <!-- Nama Produk -->
+    <TextView
+        android:id="@+id/tvNamaProdukDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Produk"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Kategori Produk -->
+    <TextView
+        android:id="@+id/tvKategoriDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori Produk"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Status Produk -->
+    <TextView
+        android:id="@+id/tvStatusDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Produk"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Jumlah Viewer -->
+    <TextView
+        android:id="@+id/tvViewerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dilihat: 0x"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Deskripsi Produk -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvDeskripsiDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi produk"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:paddingEnd="4dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Garis pemisah -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Info Stok dan Harga -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvStokDetail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Stok Produk"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/tvHargaDetail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Harga Produk"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <!-- Tombol Keranjang -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnKeranjang"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/primary_button"
+        android:text="Tambah ke Keranjang"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+</LinearLayout>

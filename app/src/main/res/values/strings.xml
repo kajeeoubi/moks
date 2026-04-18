@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MOKS</string>
+    <string name="title_beranda">Beranda</string>
+    <string name="title_produk">Produk</string>
+    <string name="title_keranjang">Keranjang</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_kontak">Tentang Kami</string>
+    <string name="title_checkout">Checkout</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_edit_sandi">Edit Kata Sandi</string>
+    <string name="title_riwayat_pesanan">Riwayat Pesanan</string>
+    <string name="edit_alamat">Edit Alamat</string>
+    <string name="hapus_alamat">Hapus Alamat</string>
+    <string name="nama_penerima">Nama Penerima</string>
+    <string name="no_hp">No. HP</string>
+    <string name="alamat_lengkap">Alamat Lengkap</string>
+    <string name="tambah_alamat_baru">Tambah Alamat Baru</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kota_kabupaten">Kota/Kabupaten</string>
+    <string name="kode_pos">Kode Pos</string>
+    <string name="simpan_alamat">Simpan Alamat</string>
+    <string name="alamat_utama">Alamat Utama</string>
+</resources>

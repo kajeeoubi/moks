@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.UTS_MOBILE_02995" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_button</item>
+        <item name="colorPrimaryVariant">@color/icon_blue_teal</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/icon_purple</item>
+        <item name="colorSecondaryVariant">@color/icon_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar and background -->
+        <item name="android:statusBarColor">@color/background_primary</item>
+        <item name="android:navigationBarColor">@color/background_primary</item>
+
+        <!-- Surface & Text -->
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Optional: Light icons for dark background -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="colorControlActivated">@color/primary_button</item>
+    </style>
+</resources>
